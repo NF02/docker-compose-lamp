@@ -36,7 +36,7 @@ Please note that we simplified the project structure from several branches for e
   docker compose up -d
   // visit localhost
 #+end_src
-Your LAMP stack is now ready!! You can access it via `http://localhost`.
+Your LAMP stack is now ready!! You can access it via http://localhost.
 
 ** Configuration and Usage
 
