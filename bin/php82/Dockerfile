@@ -49,11 +49,19 @@ RUN apt-get update && \
     pecl install imagick && \
     docker-php-ext-enable imagick
 
-# Other PHP7 Extensions
+# Other PHP8 Extensions
 
-RUN docker-php-ext-install pdo pdo_mysql && \
-    docker-php-ext-install mysqli
-
+RUN docker-php-ext-install pdo_mysql && \
+    docker-php-ext-install pdo_sqlite && \
+    docker-php-ext-install bcmath && \
+    docker-php-ext-install mysqli && \
+    docker-php-ext-install curl && \
+    docker-php-ext-install zip && \
+    docker-php-ext-install -j$(nproc) intl && \
+    docker-php-ext-install mbstring && \
+    docker-php-ext-install gettext && \
+    docker-php-ext-install calendar && \
+    docker-php-ext-install exif
 
 
 # Install Freetype
