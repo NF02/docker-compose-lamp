@@ -56,6 +56,7 @@
                                 <li><a href="http://localhost:<? print $_ENV['PMA_PORT']; ?>">phpMyAdmin</a></li>
                                 <li><a href="/test_db.php">Test DB Connection with mysqli</a></li>
                                 <li><a href="/test_db_pdo.php">Test DB Connection with PDO</a></li>
+				<li><a href="/Lamp-workstation">My Projects</a></li>
                             </ul>
                         </div>
                     </div>
